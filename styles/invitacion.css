@@ -5,7 +5,7 @@ body{
   background-attachment: fixed;
   display: grid;
   min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
+  /* grid-template-rows: auto 1fr auto; */
 }
 
 header, footer{
@@ -45,9 +45,30 @@ img{
   height: 450px;
 }
 
+@media screen and (max-width: 320px) {
+   body{
+    display: grid;
+    min-height: 100vh;
+  }
+
+  .contenedor{
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 0px;
+    color:white;
+    text-align: justify;
+    font-size: 14px;
+  }
+}
+
 footer{
   display: flex;
   justify-content:space-evenly;
-  /* padding-top: 5px; */
   font-size: 10px;
 }
