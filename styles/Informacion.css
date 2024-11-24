@@ -34,7 +34,6 @@ p, h3{
   font-style: normal;
 }
 
-
 @media screen and (min-width: 100px) {
   .contenedor{
     margin: 20px;
@@ -56,24 +55,18 @@ p, h3{
 
   .contenedor > .descriphora{
     grid-area: detallehora;
-    /* top: -40%; */
   }
 
   .contenedor > iframe{
     grid-area: ubicacion;
     margin-bottom: 2px;
-    /* margin-left: 5px; */
   }
 
   .contenedor > img{
     grid-area: horarioscole;
     margin-top: 15px;
-    /* margin-left: 5px; */
   }
 }
-
-
-
 
 @media screen and (min-width: 768px) {
   .contenedor{
@@ -112,7 +105,6 @@ p, h3{
 footer{
   display: flex;
   justify-content:space-evenly;
-  /* padding-top: 5px; */
   font-size: 10px;
 }
 }
