@@ -34,6 +34,47 @@ p, h3{
   font-style: normal;
 }
 
+
+@media screen and (min-width: 100px) {
+  .contenedor{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 20fr 0.5fr;
+    align-items: start;
+    grid-template-areas:
+      "llegar llegar"
+      "detallehora detallehora"
+      "ubicacion ubicacion"
+      "horarioscole horarioscole";
+  }
+
+  .contenedor > .comollegar{
+    grid-area: llegar;
+    text-align: justify;
+    position: relative;
+  }
+
+  .contenedor > .descriphora{
+    grid-area: detallehora;
+    /* top: -40%; */
+  }
+
+  .contenedor > iframe{
+    grid-area: ubicacion;
+    margin-bottom: 2px;
+    /* margin-left: 5px; */
+  }
+
+  .contenedor > img{
+    grid-area: horarioscole;
+    margin-top: 15px;
+    /* margin-left: 5px; */
+  }
+}
+
+
+
+
 @media screen and (min-width: 768px) {
   .contenedor{
     margin: 20px;
