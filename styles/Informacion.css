@@ -36,7 +36,7 @@ p, h3{
 
 @media screen and (max-width: 767px) {
   .contenedor{
-    margin: 20px;
+    margin: 5px;
     display: grid;
     grid-template-columns: 20fr 0.5fr;
     align-items: start;
@@ -56,6 +56,7 @@ p, h3{
 
   .contenedor > .descriphora{
     grid-area: detallehora;
+    text-align: justify;
   }
 
   .contenedor > iframe{
@@ -83,7 +84,7 @@ p, h3{
 
 @media screen and (min-width: 768px) {
   .contenedor{
-    margin: 20px;
+    margin: 5px;
     display: grid;
     grid-template-columns: 20fr 0.5fr;
     align-items: start;
@@ -106,6 +107,7 @@ p, h3{
 
   .contenedor > .descriphora{
     grid-area: detallehora;
+    text-align: justify;
     top: -40%;
   }
 
