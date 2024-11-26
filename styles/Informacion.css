@@ -51,6 +51,7 @@ p, h3{
     grid-area: llegar;
     text-align: justify;
     position: relative;
+    margin-right: 10px;
   }
 
   .contenedor > .descriphora{
