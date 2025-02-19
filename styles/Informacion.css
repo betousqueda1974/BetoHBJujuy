@@ -1,0 +1,123 @@
+body{
+  background-image: url(../img/JujuyFondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+header, footer{
+  padding: 0.1em 0.1em;
+  color: white;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:white;
+  margin-left: 15px;
+}
+
+p, h3{
+  color:beige;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .contenedor{
+    display: grid;
+    grid-template-columns: 20fr 0.5fr;
+    align-items: start;
+    grid-template-areas:
+      "llegar llegar"
+      "detallehora detallehora"
+      "ubicacion ubicacion"
+      "horarioscole horarioscole";
+  }
+
+  .contenedor > .comollegar{
+    grid-area: llegar;
+    text-align: justify;
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .contenedor > .descriphora{
+    grid-area: detallehora;
+    text-align: justify;
+  }
+
+  .contenedor > iframe{
+    grid-area: ubicacion;
+    margin-bottom: 2px;
+  }
+
+  .contenedor > .contenedorimg{
+    grid-area: horarioscole;
+    margin-top: 15px;
+  }
+
+  .contenedorimg{
+    width: 100vw;
+    max-width: 1000px;
+    min-width: 100px;
+    margin: auto;
+  }
+  img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(15 15 15 .5);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor{
+    display: grid;
+    grid-template-columns: 20fr 0.5fr;
+    align-items: start;
+    grid-template-areas:
+      "llegar ubicacion"
+      "detallehora horarioscole";
+  }
+
+  .contenedor > .comollegar{
+    grid-area: llegar;
+    text-align: justify;
+    position: relative;
+  }
+
+  .contenedor > iframe{
+    grid-area: ubicacion;
+    margin-bottom: 2px;
+    margin-left: 5px;
+  }
+
+  .contenedor > .descriphora{
+    grid-area: detallehora;
+    text-align: justify;
+    top: -40%;
+  }
+
+  .contenedor > .contenedor{
+    grid-area: horarioscole;
+    margin-top: 15px;
+    margin-left: 5px;
+  }
+}
+
+footer{
+  display: flex;
+  justify-content:space-evenly;
+  font-size: 10px;
+}

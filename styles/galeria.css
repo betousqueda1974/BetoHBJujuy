@@ -1,0 +1,53 @@
+body{
+  background-image: url(../img/JujuyFondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+header, footer{
+  padding: 0.1em 0.1em;
+  color: white;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:white;
+  margin-left: 15px;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  position: relative;
+  border: solid 2px white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 2s;
+  z-index: 0;
+ }
+
+ img:hover{
+  transform: scale(1.6);
+  transition: 2s;
+  z-index: 10;
+ }
+
+ footer{
+  display: flex;
+  justify-content:space-evenly;
+  /* padding-top: 5px; */
+  font-size: 10px;
+}

@@ -1,0 +1,112 @@
+body{
+  background-image: url(../img/JujuyFondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+header, footer{
+  padding: 0.1em 0.1em;
+  color: white;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a { 
+  text-decoration: none;
+  color:white;
+  margin-left: 10px;
+}
+
+.container{
+  perspective: 250px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 35%;
+}
+
+.tarjeta{
+  width: 154px;
+  height: 242px;
+  background-color: #442222;
+  font-size: 40px;
+  position: absolute;
+  top: 50px;
+  left: 125px;
+  border-radius: 8px;
+  cursor: pointer;
+  animation: carrusel 25s linear infinite;
+}
+
+@keyframes carrusel{
+  from{
+    transform: rotateY(360deg) translateZ(100px);
+    z-index: 10;
+    opacity: 0.9;
+  }
+  50%{
+    z-index: -10;
+  }
+  to{
+    transform: rotateX(0deg) translateZ(100px);
+  }
+}
+
+#invitI{
+  background-image: url(../img/InvitacionI.png);
+  background-size: cover;
+}
+
+#invitII{
+  background-image: url(../img/InvitacionII.jpg);
+  background-size: cover;
+  animation-delay: -8s;
+}
+
+#invitIII{
+  background-image: url(../img/InvitacionIII.png);
+  background-size: cover;
+  animation-delay: -16s;
+}
+
+@media screen and (max-width: 480px) {
+  .container{
+   /*  perspective: 250px;
+    width: 300px;
+    height: 300px;*/
+    position: relative; 
+    left: 10%;
+  }
+
+  .tarjeta{
+   /*  width: 154px;
+    height: 242px; */
+    /* width: 77px;
+    height: 121px; */
+    width: 100px;
+    height: 160px;
+    background-color: #442222;
+    font-size: 20px;
+    position: absolute;
+    top: 75px;
+    left: 90px;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: carrusel 25s linear infinite;  }
+}
+
+footer{
+  display: flex;
+  justify-content:space-evenly;
+  font-size: 10px;
+}

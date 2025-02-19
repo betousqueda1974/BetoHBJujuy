@@ -1,0 +1,81 @@
+body{
+  background-image: url(../img/JujuyFondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  min-height: 100vh;
+  /* grid-template-rows: auto 1fr auto; */
+}
+
+header, footer{
+  padding: 0.1em 0.1em;
+  color: white;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:white;
+  margin-left: 15px;
+}
+
+p{
+  width: 40%;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 90px;
+  color:white;
+  text-align: justify;
+  font-size: 22px;
+}
+.contenedor{
+  display: flex;
+}
+
+img{
+  width: 310px;
+  height: 450px;
+  cursor: pointer;
+  transition: 2s;
+}
+
+img:hover{
+  transform: scale(1.2);
+  transition: 2s;
+ }
+
+@media screen and (max-width: 480px) {
+   body{
+    display: grid;
+    min-height: 100vh;
+  }
+
+  .contenedor{
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 0px;
+    color:white;
+    text-align: justify;
+    font-size: 14px;
+  }
+}
+
+footer{
+  display: flex;
+  justify-content:space-evenly;
+  font-size: 10px;
+}
